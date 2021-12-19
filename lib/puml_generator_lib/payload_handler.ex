@@ -63,7 +63,7 @@ defmodule PumlGenerator.PayloadHandler do
     parts = Enum.with_index(String.split(url, "/"))
 
     parts
-    |> Enum.map(fn {part, index} ->
+    |> Enum.map_join("/",fn {part, index} ->
       if part in allowed_parts() or part == "" do
         part
       else
@@ -74,7 +74,6 @@ defmodule PumlGenerator.PayloadHandler do
         |> mask_parameter()
       end
     end)
-    |> Enum.join("/")
   end
 
   def map_payload(payload_str, allowed_params, value_params) do
@@ -85,7 +84,7 @@ defmodule PumlGenerator.PayloadHandler do
     |> Enum.map(&map_payload_entry(&1, value_params))
     |> case do
       [] -> "\"\""
-      params -> "\"\""#"$PAYLOAD(#{Enum.join(params, ", ")})"
+      params -> params_to_string(params)
     end
   end
 
@@ -97,6 +96,13 @@ defmodule PumlGenerator.PayloadHandler do
     end
   end
 
+  # builds a json payload with ident
+  defp params_to_string(params) do
+    start_payload = "\"\\n{\\n  "
+    end_payload = "\\n}\""
+    start_payload <> "#{Enum.join(params, "\\n   ")}" <> end_payload
+  end
+
   defp decode_payload(payload_str) do
     case Jason.decode(payload_str) do
       {:ok, %{"request" => payload}} -> payload
@@ -104,10 +110,10 @@ defmodule PumlGenerator.PayloadHandler do
       {:ok, payload} -> payload
       _ -> %{}
     end
-    rescue
-      e ->
-        IO.puts("Error Jason.decoding '#{payload_str}': #{e}")
-        raise e
+  rescue
+    e ->
+      IO.puts("Error Jason.decoding '#{payload_str}': #{e}")
+      reraise e, __STACKTRACE__
   end
 
   # TODO use a library to singularize

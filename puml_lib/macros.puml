@@ -119,15 +119,6 @@ $RESPONSE($status, $payload)
 
 !endprocedure
 
-!function $payload($a1) !return \n{\n  $a1\n} !endfunction
-!function $payload($a1, $a2) !return $payload($a1<U+002C>\n  $a2) !endfunction
-!function $payload($a1, $a2, $a3) !return $payload($a1<U+002C>\n  $a2, $a3) !endfunction
-!function $payload($a1, $a2, $a3, $a4) !return $payload($a1<U+002C>\n  a2, a3, a4) !endfunction
-!function $payload($a1, $a2, $a3, $a4, $a5) !return $payload($a1<U+002C>\n  $a2, $a3, $a4, $a5) !endfunction
-!function $payload($a1, $a2, $a3, $a4, $a5, $a6) !return $payload(a1<U+002C>\n  $a2, $a3, $a4, $a5, $a6) !endfunction
-!function $payload($a1, $a2, $a3, $a4, $a5, $a6, $a7) !return $payload(a1<U+002C>\n  $a2, $a3, $a4, $a5, $a6, $a7) !endfunction
-
-
 !procedure $INTERNAL_ACTIVATE($party)
 
 !if ($WITH_INTERNALS())

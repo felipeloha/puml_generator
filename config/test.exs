@@ -17,7 +17,8 @@ config :logger, level: :warn
 config :phoenix, :plug_init_mode, :runtime
 
 config :puml_generator, PumlGenerator.Generator,
-  allowed_url_parts: ~w(amazing_service google.com yahoo.com status customer.com webhook_endpoint),
+  allowed_url_parts:
+    ~w(amazing_service google.com yahoo.com status customer.com webhook_endpoint),
   allowed_request_params: ~w(somedata moredata data),
   allowed_response_params: ~w(somedata data),
   value_params: ["data"],

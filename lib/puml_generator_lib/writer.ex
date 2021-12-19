@@ -246,7 +246,6 @@ defmodule PumlGenerator.Writer do
 
   defp map_participants(participants, map) do
     participants
-    |> Enum.map(&map.(&1))
-    |> Enum.join("\n")
+    |> Enum.map_join("\n", &map.(&1))
   end
 end

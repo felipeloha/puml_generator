@@ -27,9 +27,7 @@ defmodule PumlGenerator.DataCase do
     end
   end
 
-  setup tags do
-    # pid = Ecto.Adapters.SQL.Sandbox.start_owner!(PumlGenerator.Repo, shared: not tags[:async])
-    # on_exit(fn -> Ecto.Adapters.SQL.Sandbox.stop_owner(pid) end)
+  setup _ do
     :ok
   end
 

@@ -61,7 +61,7 @@ defmodule PumlGenerator.Generator do
       def save_puml do
         if PumlGenerator.Generator.generation_enabled?() do
           Logger.flush()
-          Logger.info("[puml-info] generating puml")
+          Logger.info("[puml-info] generating puml in path " <> Cache.get(:config)[:path])
 
           Logger.debug("[puml-end]")
           level = Cache.get(:previous_log_level)
