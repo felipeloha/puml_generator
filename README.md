@@ -6,7 +6,7 @@ Sequence diagrams have been a very useful tool to achieve this task but their cr
 This repository offers an automated way of doing this based on logs of the api calls with the goal to have an automated way to generate sequence diagrams of a service
 and keep them up to date with less effort.
 
-It contains a simple phoenix project with a controller that makes 3 simple calls, the puml generator that generates PUML files and together with some scripting sequence diagrams.
+The project contains a simple phoenix project with a controller that makes 3 simple calls, the puml generator that generates PUML files and together with a script, generates the sequence diagrams.
 
 The following sequence diagram is automatically generated from `page_controller_test.exs`:
 
@@ -20,7 +20,6 @@ The following sequence diagram is automatically generated from `page_controller_
 - together with the macros in the puml_lib the final sequence diagrams can be generated
 
 In my experience every business case is different and would have very specific requirements, making a generic library something pretty difficult to maintain.
-Feel free to take this code and modify it as needed.
 
 ## Getting started
 preconditions:
