@@ -1,0 +1,51 @@
+@startuml
+' Definitions of participants
+actor customer
+!if $WITH_INTERNALS()
+participant AmazingService as amazing_service
+participant ThirdParty as tp
+
+box "serious_service_name" #EEEEEE
+  participant AmazingService as amazing_service
+participant ThirdParty as tp
+end box
+
+!else
+
+
+participant serious_service_name as amazing_service
+
+!endif
+
+$MESSAGE(customer, amazing_service, "#993333", "GET", "/amazing_service", "")
+
+$INTERNAL_GROUP("internal calls")
+
+$INTERNAL_MESSAGE(amazing_service, tp, "#993333", "get", "/status", "")
+$INTERNAL_RESPONSE("404","")
+
+$INTERNAL_MESSAGE(amazing_service, tp, "#993333", "get", "yahoo.com", "")
+$INTERNAL_RESPONSE("301","")
+
+$INTERNAL_GROUP_END()
+
+$MESSAGE(amazing_service, customer, "#993333", "post", "/webhook_endpoint", "")
+$RESPONSE("301","")
+$RESPONSE("200","")
+
+$MESSAGE(customer, amazing_service, "#993333", "GET", "/amazing_service", "")
+
+$INTERNAL_GROUP("internal calls")
+
+$INTERNAL_MESSAGE(amazing_service, tp, "#993333", "get", "/status", "")
+$INTERNAL_RESPONSE("404","")
+
+$INTERNAL_MESSAGE(amazing_service, tp, "#993333", "get", "yahoo.com", "")
+$INTERNAL_RESPONSE("301","")
+
+$INTERNAL_GROUP_END()
+
+$MESSAGE(amazing_service, customer, "#993333", "post", "/webhook_endpoint", "")
+$RESPONSE("301","")
+$RESPONSE("200","")
+@enduml

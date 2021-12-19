@@ -17,7 +17,7 @@ defmodule PumlGeneratorWeb.Router do
   scope "/", PumlGeneratorWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/amazing_service", PageController, :index
   end
 
   # Other scopes may use custom stacks.

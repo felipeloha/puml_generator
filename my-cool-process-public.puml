@@ -1,0 +1,9 @@
+@startuml
+
+!function $WITH_INTERNALS()
+!return 0
+!endfunction
+
+!include my-cool-process.puml
+
+@enduml
