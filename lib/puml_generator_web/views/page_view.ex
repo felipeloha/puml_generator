@@ -1,9 +1,9 @@
 defmodule PumlGeneratorWeb.PageView do
   use PumlGeneratorWeb, :view
 
-  def render("index.json", _) do
+  def render("index.json", params) do
     %{
-      somedata: "somedata",
+      somedata: params["data"] || "no data",
       moredata: "moredata"
     }
   end

@@ -1,0 +1,62 @@
+skinparam backgroundColor white
+skinparam defaultFontName Arvo
+skinparam DefaultFontColor #666666
+
+skinparam BoxPadding 10
+skinparam ParticipantPadding 10
+
+skinparam actor {
+  BackgroundColor #E8E8E8
+  BorderColor #666666
+}
+
+skinparam participant {
+  BackgroundColor #E8E8E8
+  BorderColor #E8E8E8
+  FontColor #333333
+}
+
+skinparam database {
+  BackgroundColor #E8E8E8
+  BorderColor #E8E8E8
+  FontColor #333333
+}
+
+skinparam sequence {
+  ' Style of box around group of participants ??
+  ' BoxBackgroundColor #EEEEEE - not working
+  BoxBorderColor #EEEEEE
+  BoxFontColor #333333
+
+  ' Style of === divider ===
+  DividerBackgroundColor #FAFAFA
+  DividerBorderColor #FEFEFE
+  DividerFontColor #333333
+
+  GroupBackgroundColor #E8E8E8
+  GroupBodyBackgroundColor #FAFAFA
+  GroupBorderColor #DDDDDD
+  GroupBorderThickness 1
+
+  ' Style of vertical life line per each participant
+  LifeLineBorderColor #999999
+  LifeLineBackgroundColor #FAFAFA
+
+  TitleFontColor #333333
+}
+
+skinparam ArrowColor #999999
+skinparam state {
+  BackgroundColor #E8E8E8
+  BorderColor #DDDDDD
+  EndColor #666666
+  StartColor #666666
+  FontColor #AA6633
+}
+
+skinparam note {
+  BackgroundColor #FAFAFA
+  BorderColor #DDDDDD
+}
+
+skinparam Shadowing true

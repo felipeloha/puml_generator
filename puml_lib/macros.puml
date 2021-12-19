@@ -1,0 +1,297 @@
+!procedure $STANDARD_HEADER()
+
+!if ($WITH_INTERNALS())
+header generated with PlantUML Version: %version(), at %date(), %filename()
+!else
+header generated with PlantUML Version: %version(), at %date()
+!endif
+
+!endprocedure
+
+
+!function $SMALL_VERTICAL_SPACE()
+!return ""
+!return ||10||
+!endfunction
+
+!function $MEDIUM_VERTICAL_SPACE()
+!return ""
+!return ||30||
+!endfunction
+
+!function $LARGE_VERTICAL_SPACE()
+!return ""
+!return ||50||
+!endfunction
+
+
+
+!procedure $INTERNAL($text)
+
+!if ($WITH_INTERNALS())
+$text
+!endif
+
+!endprocedure
+
+
+!procedure $EXTERNAL($text)
+
+!if ($WITH_INTERNALS())
+$text
+!endif
+
+!endprocedure
+
+
+!procedure $MESSAGE_NO($number, $sender, $receiver, $color, $method, $path, $payload)
+
+autonumber stop
+$sender -[$color]> $receiver : **$number** $method $path $payload
+
+!endprocedure
+
+
+!procedure $MESSAGE($sender, $receiver, $color, $method, $path, $payload)
+
+autonumber resume
+$sender -[$color]> $receiver : $method $path $payload
+activate $receiver
+
+!endprocedure
+
+
+!procedure $RESPONSE($sender, $receiver, $color, $status, $payload)
+
+autonumber stop
+$sender <[$color]- $receiver : $status $payload
+
+!endprocedure
+
+!procedure $RESPONSE($status, $payload)
+
+autonumber stop
+return $status $payload
+
+!endprocedure
+
+
+!procedure $INTERNAL_MESSAGE_NO($number, $sender, $receiver, $color, $method, $path, $payload)
+
+!if ($WITH_INTERNALS())
+$MESSAGE_NO($number, $sender, $receiver, $color, $method, $path, $payload)
+!endif
+
+!endprocedure
+
+
+!procedure $INTERNAL_MESSAGE($sender, $receiver, $color, $method, $path, $payload)
+
+!if ($WITH_INTERNALS())
+$MESSAGE($sender, $receiver, $color, $method, $path, $payload)
+!endif
+
+!endprocedure
+
+!procedure $INTERNAL_MESSAGE_RESPONSE($sender, $receiver, $color, $method, $path, $payload)
+
+!if ($WITH_INTERNALS())
+$MESSAGE($sender, $receiver, $color, $method, $path, $payload)
+$INTERNAL_RESPONSE(OK, )
+!endif
+
+!endprocedure
+
+
+!procedure $INTERNAL_RESPONSE($sender, $receiver, $color, $status, $payload)
+
+!if ($WITH_INTERNALS())
+$RESPONSE($sender, $receiver, $color, $status, $payload)
+!endif
+
+!endprocedure
+
+!procedure $INTERNAL_RESPONSE($status, $payload)
+
+!if ($WITH_INTERNALS())
+$RESPONSE($status, $payload)
+!endif
+
+!endprocedure
+
+!procedure $INTERNAL_ACTIVATE($party)
+
+!if ($WITH_INTERNALS())
+activate $party
+!endif
+
+!endprocedure
+
+
+!procedure $INTERNAL_DEACTIVATE($party)
+!if ($WITH_INTERNALS())
+deactivate $party
+!endif
+
+!endprocedure
+
+
+!procedure $GROUP($description)
+
+$MEDIUM_VERTICAL_SPACE()
+group $description
+$SMALL_VERTICAL_SPACE()
+
+!endprocedure
+
+
+!procedure $INTERNAL_GROUP($description)
+
+!if ($WITH_INTERNALS())
+$GROUP($description)
+!endif
+
+!endprocedure
+
+
+!procedure $ELSE($description)
+
+$MEDIUM_VERTICAL_SPACE()
+else $description
+$MEDIUM_VERTICAL_SPACE()
+
+!endprocedure
+
+
+!procedure $INTERNAL_ELSE($description)
+
+!if ($WITH_INTERNALS())
+$ELSE($description)
+!endif
+
+!endprocedure
+
+
+!procedure $GROUP_END()
+
+$SMALL_VERTICAL_SPACE()
+end
+$MEDIUM_VERTICAL_SPACE()
+
+!endprocedure
+
+
+!procedure $INTERNAL_GROUP_END()
+
+!if ($WITH_INTERNALS())
+$GROUP_END()
+!endif
+
+!endprocedure
+
+
+!procedure $LOOP($description)
+
+$MEDIUM_VERTICAL_SPACE()
+loop $description
+$SMALL_VERTICAL_SPACE()
+
+!endprocedure
+
+
+!procedure $INTERNAL_LOOP($description)
+
+!if ($WITH_INTERNALS())
+$LOOP($description)
+!endif
+
+!endprocedure
+
+
+!procedure $LOOP_END()
+
+$SMALL_VERTICAL_SPACE()
+end loop
+$MEDIUM_VERTICAL_SPACE()
+
+!endprocedure
+
+
+!procedure $INTERNAL_LOOP_END()
+
+!if ($WITH_INTERNALS())
+$LOOP_END()
+!endif
+
+!endprocedure
+
+
+!procedure $ALT($description)
+
+$MEDIUM_VERTICAL_SPACE()
+alt $description
+$SMALL_VERTICAL_SPACE()
+
+!endprocedure
+
+
+!procedure $ALT_END()
+
+$SMALL_VERTICAL_SPACE()
+end
+$MEDIUM_VERTICAL_SPACE()
+
+!endprocedure
+
+
+!procedure $INTERNAL_ALT($description)
+
+!if ($WITH_INTERNALS())
+$ALT($description)
+!endif
+
+!endprocedure
+
+
+!procedure $INTERNAL_ALT_END()
+
+!if ($WITH_INTERNALS())
+$ALT_END()
+!endif
+
+!endprocedure
+
+!procedure $OPT($description)
+
+$MEDIUM_VERTICAL_SPACE()
+opt $description
+$SMALL_VERTICAL_SPACE()
+
+!endprocedure
+
+
+!procedure $OPT_END()
+
+$SMALL_VERTICAL_SPACE()
+end
+$MEDIUM_VERTICAL_SPACE()
+
+!endprocedure
+
+
+!procedure $INTERNAL_OPT($description)
+
+!if ($WITH_INTERNALS())
+$OPT($description)
+!endif
+
+!endprocedure
+
+
+!procedure $INTERNAL_OPT_END()
+
+!if ($WITH_INTERNALS())
+$OPT_END()
+!endif
+
+!endprocedure

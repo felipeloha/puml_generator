@@ -1,0 +1,14 @@
+@startuml
+
+autonumber 10 10
+
+!include puml_lib/macros.puml
+!include puml_lib/skin.puml
+
+$STANDARD_HEADER()
+scale max 4096 height
+title Generated Puml
+
+!include process.puml
+
+@enduml

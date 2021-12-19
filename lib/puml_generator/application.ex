@@ -8,8 +8,6 @@ defmodule PumlGenerator.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      #PumlGenerator.Repo,
       # Start the Telemetry supervisor
       PumlGeneratorWeb.Telemetry,
       # Start the PubSub system

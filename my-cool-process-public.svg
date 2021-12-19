@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="569px" preserveAspectRatio="none" style="width:389px;height:569px;background:#FFFFFF;" version="1.1" viewBox="0 0 389 569" width="389px" zoomAndPan="magnify"><defs><filter height="300%" id="f1b43xaza00sgz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#666666" font-family="Arvo" font-size="18" lengthAdjust="spacing" textLength="138" x="122" y="44.1797">Generated Puml</text><rect fill="#FAFAFA" filter="url(#f1b43xaza00sgz)" height="29.3105" style="stroke:#999999;stroke-width:1.0;" width="10" x="49.75" y="245.0176"/><rect fill="#FAFAFA" filter="url(#f1b43xaza00sgz)" height="29.3105" style="stroke:#999999;stroke-width:1.0;" width="10" x="49.75" y="408.1914"/><rect fill="#FAFAFA" filter="url(#f1b43xaza00sgz)" height="133.8633" style="stroke:#999999;stroke-width:1.0;" width="10" x="263.75" y="169.7754"/><rect fill="#FAFAFA" filter="url(#f1b43xaza00sgz)" height="133.8633" style="stroke:#999999;stroke-width:1.0;" width="10" x="263.75" y="332.9492"/><line style="stroke:#999999;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="54.75" x2="54.75" y1="138.4648" y2="484.8125"/><line style="stroke:#999999;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="268.25" x2="268.25" y1="138.4648" y2="484.8125"/><text fill="#666666" font-family="Arvo" font-size="14" lengthAdjust="spacing" textLength="64" x="19.75" y="135.5117">customer</text><ellipse cx="54.75" cy="64.9766" fill="#E8E8E8" filter="url(#f1b43xaza00sgz)" rx="8" ry="8" style="stroke:#666666;stroke-width:2.0;"/><path d="M54.75,72.9766 L54.75,99.9766 M41.75,80.9766 L67.75,80.9766 M54.75,99.9766 L41.75,114.9766 M54.75,99.9766 L67.75,114.9766 " fill="none" filter="url(#f1b43xaza00sgz)" style="stroke:#666666;stroke-width:2.0;"/><text fill="#666666" font-family="Arvo" font-size="14" lengthAdjust="spacing" textLength="64" x="19.75" y="497.3477">customer</text><ellipse cx="54.75" cy="510.3008" fill="#E8E8E8" filter="url(#f1b43xaza00sgz)" rx="8" ry="8" style="stroke:#666666;stroke-width:2.0;"/><path d="M54.75,518.3008 L54.75,545.3008 M41.75,526.3008 L67.75,526.3008 M54.75,545.3008 L41.75,560.3008 M54.75,545.3008 L67.75,560.3008 " fill="none" filter="url(#f1b43xaza00sgz)" style="stroke:#666666;stroke-width:2.0;"/><rect fill="#E8E8E8" filter="url(#f1b43xaza00sgz)" height="30.4883" style="stroke:#E8E8E8;stroke-width:1.5;" width="163" x="185.25" y="102.9766"/><text fill="#333333" font-family="Arvo" font-size="14" lengthAdjust="spacing" textLength="149" x="192.25" y="123.5117">serious_service_name</text><rect fill="#E8E8E8" filter="url(#f1b43xaza00sgz)" height="30.4883" style="stroke:#E8E8E8;stroke-width:1.5;" width="163" x="185.25" y="483.8125"/><text fill="#333333" font-family="Arvo" font-size="14" lengthAdjust="spacing" textLength="149" x="192.25" y="504.3477">serious_service_name</text><rect fill="#FAFAFA" filter="url(#f1b43xaza00sgz)" height="29.3105" style="stroke:#999999;stroke-width:1.0;" width="10" x="49.75" y="245.0176"/><rect fill="#FAFAFA" filter="url(#f1b43xaza00sgz)" height="29.3105" style="stroke:#999999;stroke-width:1.0;" width="10" x="49.75" y="408.1914"/><rect fill="#FAFAFA" filter="url(#f1b43xaza00sgz)" height="133.8633" style="stroke:#999999;stroke-width:1.0;" width="10" x="263.75" y="169.7754"/><rect fill="#FAFAFA" filter="url(#f1b43xaza00sgz)" height="133.8633" style="stroke:#999999;stroke-width:1.0;" width="10" x="263.75" y="332.9492"/><polygon fill="#993333" points="251.75,165.7754,261.75,169.7754,251.75,173.7754,255.75,169.7754" style="stroke:#993333;stroke-width:1.0;"/><line style="stroke:#993333;stroke-width:1.0;" x1="54.75" x2="257.75" y1="169.7754" y2="169.7754"/><text fill="#666666" font-family="Arvo" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="61.75" y="165.0332">10</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="139" x="83.75" y="165.0332">GET /amazing_service</text><polygon fill="#993333" points="70.75,241.0176,60.75,245.0176,70.75,249.0176,66.75,245.0176" style="stroke:#993333;stroke-width:1.0;"/><line style="stroke:#993333;stroke-width:1.0;" x1="64.75" x2="262.75" y1="245.0176" y2="245.0176"/><text fill="#666666" font-family="Arvo" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="76.75" y="217.3096">20</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="159" x="98.75" y="194.3438">post /webhook_endpoint</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="4" x="98.75" y="209.6543">{</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="31" x="106.75" y="224.9648">data:</text><text fill="#666666" font-family="Arvo" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="61" x="141.75" y="224.9648">webhook</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="4" x="98.75" y="240.2754">}</text><polygon fill="#993333" points="251.75,270.3281,261.75,274.3281,251.75,278.3281,255.75,274.3281" style="stroke:#993333;stroke-width:1.0;"/><line style="stroke:#993333;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="54.75" x2="257.75" y1="274.3281" y2="274.3281"/><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="24" x="61.75" y="269.5859">301</text><polygon fill="#993333" points="65.75,299.6387,55.75,303.6387,65.75,307.6387,61.75,303.6387" style="stroke:#993333;stroke-width:1.0;"/><line style="stroke:#993333;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59.75" x2="267.75" y1="303.6387" y2="303.6387"/><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="24" x="71.75" y="298.8965">200</text><polygon fill="#993333" points="251.75,328.9492,261.75,332.9492,251.75,336.9492,255.75,332.9492" style="stroke:#993333;stroke-width:1.0;"/><line style="stroke:#993333;stroke-width:1.0;" x1="54.75" x2="257.75" y1="332.9492" y2="332.9492"/><text fill="#666666" font-family="Arvo" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="61.75" y="328.207">30</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="139" x="83.75" y="328.207">GET /amazing_service</text><polygon fill="#993333" points="70.75,404.1914,60.75,408.1914,70.75,412.1914,66.75,408.1914" style="stroke:#993333;stroke-width:1.0;"/><line style="stroke:#993333;stroke-width:1.0;" x1="64.75" x2="262.75" y1="408.1914" y2="408.1914"/><text fill="#666666" font-family="Arvo" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="76.75" y="380.4834">40</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="159" x="98.75" y="357.5176">post /webhook_endpoint</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="4" x="98.75" y="372.8281">{</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="31" x="106.75" y="388.1387">data:</text><text fill="#666666" font-family="Arvo" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="61" x="141.75" y="388.1387">webhook</text><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="4" x="98.75" y="403.4492">}</text><polygon fill="#993333" points="251.75,433.502,261.75,437.502,251.75,441.502,255.75,437.502" style="stroke:#993333;stroke-width:1.0;"/><line style="stroke:#993333;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="54.75" x2="257.75" y1="437.502" y2="437.502"/><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="24" x="61.75" y="432.7598">301</text><polygon fill="#993333" points="65.75,462.8125,55.75,466.8125,65.75,470.8125,61.75,466.8125" style="stroke:#993333;stroke-width:1.0;"/><line style="stroke:#993333;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59.75" x2="267.75" y1="466.8125" y2="466.8125"/><text fill="#666666" font-family="Arvo" font-size="13" lengthAdjust="spacing" textLength="24" x="71.75" y="462.0703">200</text><text fill="#666666" font-family="Arvo" font-size="10" lengthAdjust="spacing" textLength="382" x="0" y="14.668">generated with PlantUML Version: 1.2021.16, at Sun Dec 19 18:26:14 CET 2021</text><!--MD5=[aa5b09f80a973a4a323ba9a84d0678a7]
+@startuml
+
+!function $WITH_INTERNALS()
+!return 0
+!endfunction
+
+!include my-cool-process.puml
+
+@enduml
+
+@startuml
+
+
+
+autonumber 10 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor white
+skinparam defaultFontName Arvo
+skinparam DefaultFontColor #666666
+
+skinparam BoxPadding 10
+skinparam ParticipantPadding 10
+
+skinparam actor {
+  BackgroundColor #E8E8E8
+  BorderColor #666666
+}
+
+skinparam participant {
+  BackgroundColor #E8E8E8
+  BorderColor #E8E8E8
+  FontColor #333333
+}
+
+skinparam database {
+  BackgroundColor #E8E8E8
+  BorderColor #E8E8E8
+  FontColor #333333
+}
+
+skinparam sequence {
+  BoxBorderColor #EEEEEE
+  BoxFontColor #333333
+
+  DividerBackgroundColor #FAFAFA
+  DividerBorderColor #FEFEFE
+  DividerFontColor #333333
+
+  GroupBackgroundColor #E8E8E8
+  GroupBodyBackgroundColor #FAFAFA
+  GroupBorderColor #DDDDDD
+  GroupBorderThickness 1
+
+  LifeLineBorderColor #999999
+  LifeLineBackgroundColor #FAFAFA
+
+  TitleFontColor #333333
+}
+
+skinparam ArrowColor #999999
+skinparam state {
+  BackgroundColor #E8E8E8
+  BorderColor #DDDDDD
+  EndColor #666666
+  StartColor #666666
+  FontColor #AA6633
+}
+
+skinparam note {
+  BackgroundColor #FAFAFA
+  BorderColor #DDDDDD
+}
+
+skinparam Shadowing true
+
+
+header generated with PlantUML Version: 1.2021.16, at Sun Dec 19 18:26:14 CET 2021
+
+scale max 4096 height
+title Generated Puml
+
+actor customer
+
+
+participant serious_service_name as amazing_service
+
+
+
+autonumber resume
+customer -[#993333]> amazing_service : GET /amazing_service 
+activate amazing_service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+autonumber resume
+amazing_service -[#993333]> customer : post /webhook_endpoint \n{\n  data: **webhook**\n}
+activate customer
+
+
+autonumber stop
+return 301 
+
+
+autonumber stop
+return 200 
+
+
+
+autonumber resume
+customer -[#993333]> amazing_service : GET /amazing_service 
+activate amazing_service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+autonumber resume
+amazing_service -[#993333]> customer : post /webhook_endpoint \n{\n  data: **webhook**\n}
+activate customer
+
+
+autonumber stop
+return 301 
+
+
+autonumber stop
+return 200 
+
+
+
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 18:25:22 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: US-ASCII
+Language: en
+Country: DE
+--></g></svg>

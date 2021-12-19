@@ -7,7 +7,7 @@
 # General application configuration
 import Config
 
-#config :puml_generator,
+# config :puml_generator,
 #  ecto_repos: [PumlGenerator.Repo]
 
 # Configures the endpoint
