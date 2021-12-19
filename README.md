@@ -1,4 +1,4 @@
-# PumlGenerator
+# Puml Generator for Elixir/Phoenix Projects
 
 Documenting business logic of a service and keeping it up to date is one of the most complex tasks in the software development. 
 Sequence diagrams have been a very useful tool to achieve this task but their creation takes some effort and they get out to date pretty fast. 
