@@ -12,7 +12,7 @@ The following sequence diagram is automatically generated from `page_controller_
 
 ![alt example](my-cool-process-internal.png "Example")
 
-### About the implementation:
+### About the implementation
 - the generation is based on Logs from Logger, Plug.Logger, PumlGenerator.PumlLogger and the hackney debug logs
 - those logs are collected by the PumlBackend translated into puml `items` stored in the ETS cache
 - a post-processor sets the puml participants to the `items` and marks each `item` as public or internal based on the url_participant_map
